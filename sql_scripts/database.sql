@@ -50,3 +50,4 @@ INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Nick Cassavetes');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Spike Jonze');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('James Wan');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Stanley Kubrick');
+INSERT INTO elokuva VALUES (NULL,'2001: A Space Odyssey',9,17,1968);
