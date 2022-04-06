@@ -19,7 +19,7 @@ create Table elokuva (
     elokuva_nimi VARCHAR(40) not null,
     genre_ID int NOT NULL,
     ohjaaja_ID INT NOT NULL,
-    julkaisuvuosi DATE NOT NULL,
+    julkaisuvuosi INT NOT NULL,
     FOREIGN KEY (genre_ID) REFERENCES genre(genre_ID),
     FOREIGN KEY (ohjaaja_ID) REFERENCES ohjaaja(ohjaaja_ID)
 );
