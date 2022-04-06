@@ -32,6 +32,7 @@ INSERT into genre (tyylilaji) VALUES ('Fantasia');
 INSERT into genre (tyylilaji) VALUES ('Animaatio');
 INSERT into genre (tyylilaji) VALUES ('Romantiikka');
 INSERT into genre (tyylilaji) VALUES ('Supersankari');
+INSERT into genre (tyylilaji) VALUES ('Sci fi');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Quentin Tarantino');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Peter Jackson');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Chris Columbus');
