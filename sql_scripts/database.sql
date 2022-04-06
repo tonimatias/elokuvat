@@ -10,7 +10,7 @@ create Table genre (
 
 create Table ohjaaja (
     ohjaaja_ID INT NOT null AUTO_INCREMENT PRIMARY KEY,
-    ohjaaja_nimi VARCHAR(100) NOT NULL,
+    ohjaaja_nimi VARCHAR(100) NOT NULL
 );
 
 create Table elokuva (
