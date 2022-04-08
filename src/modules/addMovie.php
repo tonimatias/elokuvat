@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+require ('../../db.php');
 
 if(!isset($_POST["elokuva_nimi"]) || !isset($_POST["julkaisuvuosi"])){
     echo "Parametreja puuttui! Ei voida lisätä elokuvaa.";

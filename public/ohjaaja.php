@@ -1,7 +1,7 @@
 <?php
-include('../Elokuvat/src/templates/head.php');
+include('../src/templates/head.php');
 
-require 'db.php';
+require ('../db.php');
 
 $sql = "SELECT ohjaaja_nimi FROM ohjaaja";
 
@@ -15,3 +15,5 @@ $ohjaaja = $pdo->query($sql);
     }
     echo"</ul>";
 } 
+
+include('../src/templates/foot.php');

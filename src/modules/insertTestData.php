@@ -1,6 +1,6 @@
 <?php
 
-require 'db.php';
+require ('../../db.php');
 
 $sql = "INSERT INTO genre (tyylilaji) VALUES ('testigenre')";
 

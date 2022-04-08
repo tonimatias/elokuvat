@@ -18,13 +18,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://localhost/elokuvat/leffat.php">Elokuvat</a>
+            <a class="nav-link active" aria-current="page" href="http://localhost/elokuvat/public">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="genre.php">Genre</a>
+            <a class="nav-link" href="http://localhost/elokuvat/public/elokuvat.php">Elokuvat</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="ohjaaja.php">Ohjaaja</a>
+            <a class="nav-link" href="http://localhost/elokuvat/public/genre.php">Genre</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="http://localhost/elokuvat/public/ohjaaja.php">Ohjaaja</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="http://localhost/elokuvat/public/genre_and_movie.php">Elokuvat tyylilajeittain</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="http://localhost/elokuvat/public/add_movie.php">Elokuvien lisääminen</a>
             </li>
         </ul>
         </div>
