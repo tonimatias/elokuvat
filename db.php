@@ -1,7 +1,7 @@
 <?php
 
-require 'myconf.ini';
-$dsn = "mysql:host=$host;dbname=$db;charset=UTF8";
+require 'myconf.php';
+$dsn = "mysql:host=$host;dbname=$database;charset=UTF8";
 try {
 	$pdo = new PDO($dsn, $user, $password);
     echo "Connected!";
