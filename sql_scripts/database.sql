@@ -16,7 +16,7 @@ create Table ohjaaja (
 create Table elokuva (
     /* id int PRIMARY KEY AUTO_INCREMENT, */
     elokuva_ID INT AUTO_INCREMENT PRIMARY KEY,
-    elokuva_nimi VARCHAR(40) not null,
+    elokuva_nimi VARCHAR(50) not null,
     genre_ID int NOT NULL,
     ohjaaja_ID INT NOT NULL,
     julkaisuvuosi INT NOT NULL,
