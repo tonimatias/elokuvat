@@ -13,7 +13,7 @@ $genreMovie = $pdo->query($sql);
 
 echo "<ul>";
 foreach ($genreMovie as $g) {
-    echo "<li>" . $g["tyylilaji"] . " " . $g["elokuva_nimi"] . "</li>";
+    echo "<li>". $g["tyylilaji"] . ": ". $g["elokuva_nimi"] . "</li>";
 }
 echo "</ul>";
 
