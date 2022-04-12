@@ -24,9 +24,25 @@ $leffat = $pdo->query($sql);
 if ($leffat->rowCount() > 0){
 
     while ($row = $leffat->fetch()){
-        echo"<div class='card'>" .
-        "<div class='card-header'>" .$row["elokuva_nimi"]. "</div>".
-        "<div class='card-main'>".
+        echo"<div class='card' style='width: 25vw;                 
+        border: 1px solid #EF9A9A;   
+        border-radius: 4px;           
+        overflow: hidden;            
+        display: flex;              
+        flex-direction: column;
+        margin: 10px;'>" .
+        "<div class='card-header' style='color: #D32F2F;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        border-bottom: 1px solid #EF9A9A;
+        background-color: #FFEBEE;
+        padding: 5px 10px;'>" .$row["elokuva_nimi"]. "</div>".
+        "<div class='card-main' style=' display: flex;              
+        flex-direction: column;     
+        justify-content: center;     
+        align-items: center;        
+        padding: 15px 0; '>".
         "<div class='main-description'>". "Julkaisuvuosi: ". $row["julkaisuvuosi"]. " Ohjaaja: " . $row["ohjaaja_nimi"]. " Tyylilaji: ". $row["tyylilaji"] . "</div>".
         "</div>".
          "</div>";
