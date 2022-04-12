@@ -1,6 +1,5 @@
 <?php
 include('../src/templates/head.php');
-
 require ('../db.php');
 
 $sql = "SELECT elokuva_nimi, julkaisuvuosi, ohjaaja_nimi, tyylilaji 
@@ -24,14 +23,14 @@ $leffat = $pdo->query($sql);
 if ($leffat->rowCount() > 0){
 
     while ($row = $leffat->fetch()){
-        echo"<div class='card' style='width: 25vw;                 
+        echo"<div class='container' style='width: 20vw;                 
         border: 1px solid #EF9A9A;   
         border-radius: 4px;           
         overflow: hidden;            
         display: flex;              
         flex-direction: column;
         margin: 10px;'>" .
-        "<div class='card-header' style='color: #D32F2F;
+        "<div class='row row-cols-2' style='color: #D32F2F;
         text-align: center;
         font-size: 12px;
         font-weight: 600;
@@ -40,10 +39,9 @@ if ($leffat->rowCount() > 0){
         padding: 5px 10px;'>" .$row["elokuva_nimi"]. "</div>".
         "<div class='card-main' style=' display: flex;              
         flex-direction: column;     
-        justify-content: center;     
-        align-items: center;        
-        padding: 15px 0; '>".
-        "<div class='main-description'>". "Julkaisuvuosi: ". $row["julkaisuvuosi"]. " Ohjaaja: " . $row["ohjaaja_nimi"]. " Tyylilaji: ". $row["tyylilaji"] . "</div>".
+               
+        padding: 5px 0; '>".
+        "<div class='main-description'>". "Julkaisuvuosi: ". $row["julkaisuvuosi"]. '<br>' . " Ohjaaja: " . $row["ohjaaja_nimi"]. '<br>' ." Tyylilaji: ". $row["tyylilaji"] . "</div>".
         "</div>".
          "</div>";
     }
