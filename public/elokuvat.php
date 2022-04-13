@@ -23,7 +23,8 @@ $leffat = $pdo->query($sql);
 if ($leffat->rowCount() > 0){
 
     while ($row = $leffat->fetch()){
-        echo"<div class='card'>" .
+        echo
+        "<div class='card'>" .
         "<div class='card-header'>" .$row["elokuva_nimi"]. "</div>".
         "<div class='card-main'>".
         "<div class='main-description'>". "Julkaisuvuosi: ". $row["julkaisuvuosi"]. '<br>' . " Ohjaaja: " . $row["ohjaaja_nimi"]. '<br>' ." Tyylilaji: ". $row["tyylilaji"] . "</div>".
