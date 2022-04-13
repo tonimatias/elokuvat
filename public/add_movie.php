@@ -25,7 +25,20 @@ require ('../db.php');
         <label for="elokuvanimi">Elokuvan nimi:</label><br>
         <input type="text" name="elokuvanimi" id="elokuvanimi"><br>
         <label for="genreID">Genre ID:</label><br>
-        <input type="text" name="genreID" id="genreID"><br>
+        
+       <?php 
+        $sql = "SELECT * FROM genre";
+
+        $genres = $pdo->query($sql);
+
+        echo"<select>";
+        foreach ($genres as $g){
+            echo"<option name='genreID' id='genreID'>" . $g["tyylilaji"]. "</option>";
+        }
+        echo"</select> <br>";
+      
+       ?>
+        <!-- <input type="text" name="genreID" id="genreID"><br> -->
         <label for="ohjaajaID">Ohjaajan ID:</label><br>
         <input type="text" name="ohjaajaID" id="ohjaajaID"><br>
         <label for="julkaisuvuosi">Julkaisuvuosi:</label><br>
