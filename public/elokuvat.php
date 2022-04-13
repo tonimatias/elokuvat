@@ -4,7 +4,8 @@ require ('../db.php');
 
 $sql = "SELECT elokuva_nimi, julkaisuvuosi, ohjaaja_nimi, tyylilaji 
 FROM elokuva, ohjaaja, genre
-WHERE elokuva.ohjaaja_ID = ohjaaja.ohjaaja_ID AND elokuva.genre_ID = genre.genre_ID";
+WHERE elokuva.ohjaaja_ID = ohjaaja.ohjaaja_ID AND elokuva.genre_ID = genre.genre_ID
+ORDER BY elokuva_nimi";
 
 $leffat = $pdo->query($sql);
 
