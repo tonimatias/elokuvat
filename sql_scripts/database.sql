@@ -24,6 +24,14 @@ create Table elokuva (
     FOREIGN KEY (ohjaaja_ID) REFERENCES ohjaaja(ohjaaja_ID)
 );
 
+CREATE TABLE henkilö(  
+    ID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    firstname VARCHAR(150),
+    lastname VARCHAR(150),
+    username VARCHAR(150) UNIQUE,
+    password VARCHAR(150)
+);
+
 INSERT into genre (tyylilaji) VALUES ('Komedia');
 INSERT into genre (tyylilaji) VALUES ('Kauhu');
 INSERT into genre (tyylilaji) VALUES ('Toiminta');
