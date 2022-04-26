@@ -30,8 +30,8 @@ if ($leffat->rowCount() > 0){
         "<div class='card-main'>".
         "<div class='main-description'>". "Julkaisuvuosi: ". $row["julkaisuvuosi"]. '<br>' . " Ohjaaja: " . $row["ohjaaja_nimi"]. '<br>' ." Tyylilaji: ". $row["tyylilaji"] . "</div>".
         "<div class='btn-group'>".
-        "<a class='btn btn-secondary' href='./update.php?id=" .$row['elokuva_ID'] ."'> Muokkaa </a>".
-        "<a class='btn btn-danger' href='./delete.php?id=" .$row['elokuva_ID'] ."'> Poista</a>".
+        "<a class='btn btn-secondary' href='./update.php?id=" /*.$row['elokuva_ID']*/ ."'> Muokkaa </a>".
+        "<a class='btn btn-danger' href='./delete.php?id=" /*.$row['elokuva_ID']*/."'> Poista</a>".
         "</div>".
         "</div>".
          "</div>";
