@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,10 +42,10 @@
             </li>
             <?php 
                 if(isset($_SESSION["username"])){
-                    echo '<a class="nav-link bg-danger" href="logout.php">Log out</a>';
+                    echo '<a class="nav-link bg-danger" href="logout.php">Kirjaudu ulos</a>';
                     echo '<a class="nav-link" href="http://localhost/elokuvat/public/add_movie.php">Elokuvien lisääminen</a>';
                 }else{
-                    echo '<a class="nav-link bg-success" href="login.php">Log in</a>';
+                    echo '<a class="nav-link bg-success" href="login.php">Kirjaudu sisään</a>';
                 }
             ?>
         </ul>
