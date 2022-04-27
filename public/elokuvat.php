@@ -2,7 +2,7 @@
 include('../src/templates/head.php');
 require ('../db.php');
 
-$sql = "SELECT elokuva_nimi, julkaisuvuosi, ohjaaja_nimi, tyylilaji 
+$sql = "SELECT elokuva_ID, elokuva_nimi, julkaisuvuosi, ohjaaja_nimi, tyylilaji 
 FROM elokuva, ohjaaja, genre
 WHERE elokuva.ohjaaja_ID = ohjaaja.ohjaaja_ID AND elokuva.genre_ID = genre.genre_ID
 ORDER BY elokuva_nimi";
@@ -30,8 +30,8 @@ if ($leffat->rowCount() > 0){
         "<div class='card-main'>".
         "<div class='main-description'>". "Julkaisuvuosi: ". $row["julkaisuvuosi"]. '<br>' . " Ohjaaja: " . $row["ohjaaja_nimi"]. '<br>' ." Tyylilaji: ". $row["tyylilaji"] . "</div>".
         "<div class='btn-group'>".
-        "<a class='btn btn-secondary' href='./update.php?id=" /*.$row['elokuva_ID']*/ ."'> Muokkaa </a>".
-        "<a class='btn btn-danger' href='./delete.php?id=" /*.$row['elokuva_ID']*/."'> Poista</a>".
+        "<a class='btn btn-secondary' href='./update.php?id=" .$row['elokuva_ID'] ."'> Muokkaa </a>".
+        "<a class='btn btn-danger' href='./delete.php?id=" .$row['elokuva_ID']."'> Poista</a>".
         "</div>".
         "</div>".
          "</div>";
