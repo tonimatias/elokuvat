@@ -44,6 +44,7 @@
                 if(isset($_SESSION["username"])){
                     echo '<a class="nav-link bg-danger" href="logout.php">Kirjaudu ulos</a>';
                     echo '<a class="nav-link" href="http://localhost/elokuvat/public/add_movie.php">Elokuvien lisääminen</a>';
+                    echo '<a class="nav-link" href="http://localhost/elokuvat/public/delete_movie.php">Elokuvien poistaminen</a>';
                 }else{
                     echo '<a class="nav-link bg-success" href="login.php">Kirjaudu sisään</a>';
                 }
