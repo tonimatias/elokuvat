@@ -50,7 +50,7 @@ INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('James Cameron');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Christopher Nolan');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Matt Reeves');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Tim Miller');
-INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Elgar Wright');
+INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Edgar Wright');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Denis Villeneuve');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Chris Buck');
 INSERT INTO ohjaaja (ohjaaja_nimi) VALUES ('Andrew Stanton');
