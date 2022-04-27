@@ -11,7 +11,7 @@ function deleteMovie($id){
     
     //Tarkistetaan onko muttujia asetettu
     if( !isset($id) ){
-        throw new Exception("Missing parameters! Cannot delete person!");
+        throw new Exception("Parametreja puuttui, ei voida poistaa");
     }
     
     try{
@@ -35,7 +35,7 @@ function deleteMovie($id){
 if(isset($id)){
     try{
         deleteMovie($id);
-        echo '<div class="alert alert-success" role="alert">Person deleted!!</div>';
+        echo '<div class="alert alert-success" role="alert">Elokuva poistettu</div>';
     }catch(Exception $e){
         echo '<div class="alert alert-danger" role="alert">'.$e->getMessage().'</div>';
     }
@@ -47,7 +47,7 @@ $id = filter_input(INPUT_GET, "id");
 if(isset($id)){
     try{
         deleteMovie($id);
-        echo '<div class="alert alert-success" role="alert">Person deleted!!</div>';
+        echo '<div class="alert alert-success" role="alert">Elokuva poistettu</div>';
     }catch(Exception $e){
         echo '<div class="alert alert-danger" role="alert">'.$e->getMessage().'</div>';
     }
