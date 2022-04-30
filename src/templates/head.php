@@ -37,15 +37,14 @@
           <!--   <li class="nav-item">
             <a class="nav-link" href="http://localhost/elokuvat/public/add_movie.php">Elokuvien lisääminen</a>
             </li> -->
-            <li class="nav-item">
-            <a class="nav-link" href="person.php">Rekisteröidy</a>
-            </li>
+           
             <?php 
                 if(isset($_SESSION["username"])){
-                    echo '<a class="nav-link bg-danger" href="logout.php">Kirjaudu ulos</a>';
                     echo '<a class="nav-link" href="http://localhost/elokuvat/public/add_movie.php">Lisää elokuva</a>';
                     echo '<a class="nav-link" href="http://localhost/elokuvat/public/delete_movie.php">Poista elokuva</a>';
+                    echo '<a class="nav-link bg-danger" href="logout.php">Kirjaudu ulos</a>';
                 }else{
+                    echo '<a class="nav-link" href="person.php">Rekisteröidy</a>';
                     echo '<a class="nav-link bg-success" href="login.php">Kirjaudu sisään</a>';
                 }
             ?>
