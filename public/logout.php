@@ -7,7 +7,7 @@
         logout();
         header("Location: logout.php");
     }else{
-        echo '<div class="alert alert-success" role="alert">Logged out!!</div>';
+        echo '<div class="alert alert-success" role="alert">Kirjauduttu ulos!!</div>';
     }
 
     include('../src/templates/foot.php');
