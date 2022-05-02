@@ -1,9 +1,7 @@
 <?php
 include('../src/templates/head.php');
-
-require ('../db.php');
-
 include('../src/modules/authorization.php');
+require ('../db.php');
 
 
 

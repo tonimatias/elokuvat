@@ -10,7 +10,6 @@ require ('../db.php');
     $genre = filter_input(INPUT_POST,"genreID");
     $ohjaaja = filter_input(INPUT_POST,"ohjaajaID");
     $julkaisuvuosi = filter_input(INPUT_POST,"julkaisuvuosi");
-    /* $genreID = filter_input(INPUT_POST, "genreID", FILTER_SANITIZE_NUMBER_INT); */
 
     if (isset($elokuvanimi)) {
         try {
@@ -73,19 +72,15 @@ require ('../db.php');
     <form action="add_movie.php" method="post">
         <label for="elokuvanimi">Elokuvan nimi:</label><br>
         <input type="text" name="elokuvanimi" id="elokuvanimi"><br>
-        <label for="genreID">Genre ID: <!-- <p> 1 = Komedia | 2 = Kauhu |  3 = Toiminta |  4 = Draama  | 5 = Fantasia |  6 = Animaatio |  7 = Romantiikka  | 8 = Supersankari |  9 = Sci-fi</p> --></label><br>
-        
+        <label for="genreID">Genre ID: </label><br>
         <?php 
        createGenreDropdown($selectedId);
       
        ?>
-        <!-- <input type="text" name="genreID" id="genreID" placeholder="ei vittu"> <br> -->
-        
         <label for="ohjaajaID">Ohjaajan ID:</label><br>
         <?php
         ohjaajaDropDown($selectedID);
         ?>
-        <!-- <input type="text" name="ohjaajaID" id="ohjaajaID"><br> -->
         <label for="julkaisuvuosi">Julkaisuvuosi:</label><br>
         <input type="text" name="julkaisuvuosi" id="julkaisuvuosi"><br>
         <input type="submit" class="btn btn-primary" value="Add movie">

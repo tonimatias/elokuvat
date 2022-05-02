@@ -1,6 +1,5 @@
 <?php
 include('../src/templates/head.php');
-
 require ('../db.php');
 
 $sql = "SELECT ohjaaja_nimi FROM ohjaaja";

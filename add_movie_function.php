@@ -5,12 +5,12 @@ function addMovie($elokuvanimi, $genre, $ohjaaja, $julkaisuvuosi) {
 
     //Tarkistetaan onko muttujia asetettu
     if (!isset($elokuvanimi) || !isset($genre) || !isset($ohjaaja) || !isset($julkaisuvuosi)) {
-        throw new Exception("Missing parameters! Cannot add person!");
+        throw new Exception("Parametrejä puuttui! ei voida lisätä elokuvaa.");
     }
 
     //Tarkistetaan, ettei tyhjiä arvoja muuttujissa
     if (empty($elokuvanimi) || empty($genre) || empty($ohjaaja) || empty($julkaisuvuosi)) {
-        throw new Exception("Cannot set empty values!");
+        throw new Exception("Ei voida asettaa tyhjiä arvoja!");
     }
    
     try{

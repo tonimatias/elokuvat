@@ -1,8 +1,6 @@
 <?php
    require ('../db.php');
-
    include('../src/templates/head.php');
-
    include('../src/modules/authorization.php');
 
     if(isset($_SESSION["username"])){

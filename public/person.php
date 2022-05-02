@@ -1,8 +1,6 @@
 <?php
 include('../src/templates/head.php');
-
 include('../addperson.php');
-
 require ('../db.php');
 
     //Filtteroidaan POST-inputit (ei käytetä string-filtteriä, koska deprekoitunut)

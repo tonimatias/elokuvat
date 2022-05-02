@@ -1,6 +1,5 @@
 <?php
 include('../src/templates/head.php');
-
 require('../db.php');
 
 //Tyylilajit ja elokuvat linkitetty, näyttää jokaisen elokuvan tyylilajin ja nimen:
