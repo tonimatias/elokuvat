@@ -6,12 +6,12 @@ function login($uname, $pw){
 
     //Tarkistetaan onko muttujia asetettu
     if( !isset($uname) || !isset($pw) ){
-        throw new Exception("Missing parameters. Cannot log in.");
+        throw new Exception("Puuttuvat parametrit. Ei voida kirjautua sisään.");
     }
 
     //Tarkistetaan, ettei tyhjiä arvoja muuttujissa
     if( empty($uname) || empty($pw) ){
-        throw new Exception("Cannot log in with empty values.");
+        throw new Exception("Ei voida kirjautua sisään tyhjillä arvoilla.");
     }
 
     try{
@@ -23,14 +23,14 @@ function login($uname, $pw){
         $statement->execute();
 
         if($statement->rowCount() <=0){
-            throw new Exception("Person not found! Cannot log in!");
+            throw new Exception("Käyttäjää ei löytynyt! Ei voida kirjautua sisään!");
         }
 
         $row = $statement->fetch();
 
         //Tarkistetaan käyttäjän antama salasana tietokannan salasanaa vasten
         if(!password_verify($pw, $row["password"] )){
-            throw new Exception("Wrong password!!");
+            throw new Exception("Väärä salasana!!");
         }
 
         //Jos käyttäjä tunnistettu, talletetaan käyttäjän tiedot sessioon
