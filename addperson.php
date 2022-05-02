@@ -7,12 +7,12 @@ function addPerson($fname, $lname, $uname, $pw){
     
     //Tarkistetaan onko muttujia asetettu
     if( !isset($fname) || !isset($lname) || !isset($uname) || !isset($pw) ){
-        throw new Exception("Missing parameters! Cannot add person!");
+        throw new Exception("Puutuvia parametrejä! Ei voi lisätä henkilöä!");
     }
     
     //Tarkistetaan, ettei tyhjiä arvoja muuttujissa
     if( empty($fname) || empty($lname) || empty($uname) || empty($pw) ){
-        throw new Exception("Cannot set empty values!");
+        throw new Exception("Ei voida asettaa tyhjiä arvoja!");
     }
     
     try{
