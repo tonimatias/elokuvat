@@ -13,7 +13,7 @@ require ('../db.php');
     if(isset($fname)){
         try{
             addPerson($fname, $lname, $uname, $pw);
-            echo '<div class="alert alert-success" role="alert">Person added!!</div>';
+            echo '<div class="alert alert-success" role="alert">Henkilö lisätty!!</div>';
         }catch(Exception $e){
             echo '<div class="alert alert-danger" role="alert">'.$e->getMessage().'</div>';
         }
@@ -23,13 +23,13 @@ require ('../db.php');
 ?>
 
     <form action="person.php" method="post">
-        <label for="fname">First name:</label><br>
+        <label for="fname">Etunimi:</label><br>
         <input type="text" name="fname" id="fname"><br>
-        <label for="lname">Last name:</label><br>
+        <label for="lname">Sukunimi:</label><br>
         <input type="text" name="lname" id="lname"><br>
-        <label for="username">Username:</label><br>
+        <label for="username">Käyttäjätunnus:</label><br>
         <input type="text" name="username" id="username"><br>
-        <label for="password">Password:</label><br>
+        <label for="password">Salasana:</label><br>
         <input type="password" name="password" id="password"><br>
         <input type="submit" class="btn btn-primary" value="Add person">
     </form>
