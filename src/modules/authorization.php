@@ -3,8 +3,6 @@ function login($uname, $pw){
 
     require ('../db.php');
 
-    // $uname = filter_input(INPUT_POST, "username");
-    // $pw = filter_input(INPUT_POST, "password");
 
     //Tarkistetaan onko muttujia asetettu
     if( !isset($uname) || !isset($pw) ){

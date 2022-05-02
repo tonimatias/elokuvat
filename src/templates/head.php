@@ -34,9 +34,6 @@
             <li class="nav-item">
             <a class="nav-link" href="http://localhost/elokuvat/public/genre_and_movie.php">Elokuvat tyylilajeittain</a>
             </li>
-          <!--   <li class="nav-item">
-            <a class="nav-link" href="http://localhost/elokuvat/public/add_movie.php">Elokuvien lisääminen</a>
-            </li> -->
             <li class="nav-item">
             <a class="nav-link" href="person.php">Rekisteröidy</a>
             </li>
