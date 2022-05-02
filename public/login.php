@@ -24,9 +24,9 @@ if(!isset($_SESSION["username"]) && isset($uname)){
 ?>
 
     <form action="login.php" method="post">
-        <label for="username">Username:</label><br>
+        <label for="username">Käyttäjätunnus:</label><br>
         <input type="text" name="username" id="username"><br>
-        <label for="password">Password:</label><br>
+        <label for="password">Salasana:</label><br>
         <input type="password" name="password" id="password"><br>
         <input type="submit" class="btn btn-primary" value="Log in">
     </form>
