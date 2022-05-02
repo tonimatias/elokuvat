@@ -14,7 +14,7 @@ require ('../db.php');
     if (isset($elokuvanimi)) {
         try {
             addMovie($elokuvanimi, $genre, $ohjaaja, $julkaisuvuosi);
-            echo '<div class="alert alert-success" role="alert">Movie added!!</div>';
+            echo '<div class="alert alert-success" role="alert">Elokuva lisätty</div>';
         } catch (Exception $e) {
             echo '<div class="alert alert-danger" role="alert">' . $e->getMessage() . '</div>';
         }
