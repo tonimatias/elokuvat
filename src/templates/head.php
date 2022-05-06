@@ -20,25 +20,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://localhost/elokuvat/public">Etusivu</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Etusivu</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="http://localhost/elokuvat/public/elokuvat.php">Elokuvat</a>
+            <a class="nav-link" href="/elokuvat/public/elokuvat.php">Elokuvat</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="http://localhost/elokuvat/public/genre.php">Genre</a>
+            <a class="nav-link" href="/elokuvat/public/genre.php">Genre</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="http://localhost/elokuvat/public/ohjaaja.php">Ohjaaja</a>
+            <a class="nav-link" href="/elokuvat/public/ohjaaja.php">Ohjaaja</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="http://localhost/elokuvat/public/genre_and_movie.php">Elokuvat tyylilajeittain</a>
+            <a class="nav-link" href="/elokuvat/public/genre_and_movie.php">Elokuvat tyylilajeittain</a>
             </li>
            
             <?php 
                 if(isset($_SESSION["username"])){
-                    echo '<a class="nav-link" href="http://localhost/elokuvat/public/add_movie.php">Lisää elokuva</a>';
-                    echo '<a class="nav-link" href="http://localhost/elokuvat/public/delete_movie.php">Poista elokuva</a>';
+                    echo '<a class="nav-link" href="add_movie.php">Lisää elokuva</a>';
+                    echo '<a class="nav-link" href="delete_movie.php">Poista elokuva</a>';
                     echo '<a class="nav-link bg-danger" href="logout.php">Kirjaudu ulos</a>';
                 }else{
                     echo '<a class="nav-link" href="person.php">Rekisteröidy</a>';
