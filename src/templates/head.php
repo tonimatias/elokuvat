@@ -20,19 +20,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Etusivu</a>
+            <a class="nav-link active" aria-current="page" href="./">Etusivu</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/elokuvat/public/elokuvat.php">Elokuvat</a>
+            <a class="nav-link" href="elokuvat.php">Elokuvat</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/elokuvat/public/genre.php">Genre</a>
+            <a class="nav-link" href="genre.php">Genre</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/elokuvat/public/ohjaaja.php">Ohjaaja</a>
+            <a class="nav-link" href="ohjaaja.php">Ohjaaja</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/elokuvat/public/genre_and_movie.php">Elokuvat tyylilajeittain</a>
+            <a class="nav-link" href="genre_and_movie.php">Elokuvat tyylilajeittain</a>
             </li>
            
             <?php 
